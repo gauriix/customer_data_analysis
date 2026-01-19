@@ -72,9 +72,7 @@ SELECT item_rank,category, item_purchased, total_orders
 FROM item_counts
 WHERE item_rank <=3;
 
--- Q9. Are customers who are repeat buyers (more than 5 previous purchases) also likely to subscribe?
-
--- Q10. What is the revenue contribution of each age group? 
+-- Q9. What is the revenue contribution of each age group? 
 SELECT age_group,
        SUM(purchase_amount) AS total_revenue
 FROM customer
